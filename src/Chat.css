@@ -1,0 +1,85 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+#Message-list {
+  margin-top: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 1;
+  padding: 20px 20px 0;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-align: right;
+  padding: 20px 20px 0 0;
+  z-index: 999;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightcoral;
+  cursor: pointer;
+}
+
+.Message-input {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+  flex-shrink: 0;
+}
+
+.Message-input input[type="text"] {
+  width: 100%;
+  margin-left: -20px;
+}
+
+.Message-input div {
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+form input.Message-send {
+  padding: 22px;
+  float: right;
+  margin-top: 10px;
+}
+
+.Message {
+  margin-bottom: 20px;
+}
+
+.Message-body {
+  max-width: 80%;
+  display: inline-block;
+}
+
+.Username {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.Username p {
+  margin-bottom: 0;
+}
+
+.Message p {
+  margin-top: 0;
+}
